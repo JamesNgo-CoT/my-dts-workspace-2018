@@ -77,12 +77,12 @@ export function buildSass() {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-const buildHtmlSrc = './src/**/*!(.template).html';
+const buildHtmlSrc = './src/**/*.html';
 export function buildHtml() {
 	const buildHtmlDest = './dist/';
 	return gulp.src(buildHtmlSrc)
 		.pipe(mustache())
-		.pipe(dependencies({ dest: buildHtmlDest, prefix: '/vendors' }))
+		.pipe(dependencies({ dest: buildHtmlDest, prefix: '/vendors' })) // NOT WORKING
 		.pipe(gulp.dest(buildHtmlDest));
 }
 
