@@ -1,8 +1,11 @@
 {
   "name": "my-dts-workspace-2018",
+  "description": "Description...",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
