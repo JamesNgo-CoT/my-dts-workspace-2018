@@ -4,7 +4,7 @@ import browserify from 'browserify';
 import buffer from 'vinyl-buffer';
 import cssNano from 'gulp-cssnano';
 import del from 'del';
-import dependencies from 'gulp-dependencies';
+import dependencies from 'gulp-web-dependencies';
 import esLint from 'gulp-eslint';
 import gulp from 'gulp';
 import mustache from 'gulp-mustache';
